@@ -11,5 +11,8 @@
     "css"
   ],
   "author": "Farouk Charkas <farouk.charkas@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^17.7.2"
+  }
 }
