@@ -2,55 +2,63 @@
 
 ## Description
 
-A tool that automatically converts px to em measurements in CSS, enhancing your project's accessibility, responsiveness, and scalability.
+Emifier is a command-line tool that automatically converts pixel (px) measurements to em units in CSS files. This enhances the accessibility, responsiveness, and scalability of your web projects.
+
+## Version
+
+1.1.2
 
 ## Installation
 
-To install Emify, you will need Node.js and npm installed on your system. Once these prerequisites are met, you can install Emify globally using npm:
+Install Emifier via npm:
 
 ```bash
 npm install -g emifier
 ```
 
+This will install Emifier globally on your system, making it available in your command line.
+
 ## Usage
 
-After installation, you can use the `emifier emify [basePx] [path]` command in your terminal. The tool can process a single CSS file or an entire directory of CSS files.
+To use Emifier, run the `emify` command followed by optional arguments for base pixel size and the path to your CSS file or directory.
 
-### Basic Command Structure
+### Syntax
 
 ```bash
-emify [basePx] [path]
+emify [baseSize] [path]
 ```
 
-- `basePx`: The base font size in pixels to calculate em units. Defaults to 16px if not specified.
-- `path`: The path to the CSS file or directory you want to convert. If no path is provided, Emify will use the current working directory.
+- `baseSize`: The base font size in pixels (default: 16px).
+- `path`: The path to the CSS file or directory. Defaults to the current working directory.
 
 ### Examples
 
-Convert all `.css` files in the current directory using the default base size:
+Convert all `.css` files in the current directory:
 
 ```bash
-emifier emify
+emify
 ```
 
-Convert a specific CSS file with a custom base size of 18px:
+Convert a specific CSS file with a custom base size:
 
 ```bash
-emifier emify 18 path/to/your/file.css
+emify 18 path/to/your/file.css
 ```
 
 Convert all `.css` files in a specific directory:
 
 ```bash
-emifier emify path/to/your/directory
+emify 16 path/to/your/directory
 ```
 
-## Features
+## Dependencies
 
-- Recursively process all CSS files in a directory
-- Customizable base pixel size for em conversion
-- Supports single file or bulk processing
+- yargs: ^17.7.2
+
+## Author
+
+Farouk Charkas <farouk.charkas@gmail.com>
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+MIT License
