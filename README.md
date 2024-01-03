@@ -6,7 +6,7 @@ Emifier is a command-line tool that automatically converts pixel (px) measuremen
 
 ## Version
 
-1.1.2
+1.1.4
 
 ## Installation
 
@@ -50,6 +50,48 @@ Convert all `.css` files in a specific directory:
 ```bash
 emify 16 path/to/your/directory
 ```
+
+## Adding Emifier to PATH
+
+Emifier should be automatically added to your system's PATH when installed globally via npm. If you encounter an issue where `emifier` is not recognized as a command, you may need to manually add npm's global installation directory to your PATH.
+
+### Finding npm's Global Installation Directory
+
+First, find out where npm installs global packages on your system:
+
+```bash
+npm prefix -g
+```
+
+This command will return the path to npm's global installation directory.
+
+### Updating PATH Environment Variable
+
+#### For Windows:
+
+1. Search for "Environment Variables" in your Windows search and select "Edit the system environment variables."
+2. In the System Properties window, click on "Environment Variables."
+3. Under "System variables," find and select the `Path` variable, then click "Edit."
+4. Click "New" and add the path you obtained from `npm prefix -g`.
+5. Click "OK" to close all dialogs and apply the changes.
+
+#### For macOS/Linux:
+
+Add the following line to your `.bashrc`, `.zshrc`, or equivalent shell configuration file:
+
+```bash
+export PATH="$(npm prefix -g)/bin:$PATH"
+```
+
+Then, refresh your terminal or source the configuration file:
+
+```bash
+source ~/.bashrc
+# or
+source ~/.zshrc
+```
+
+After these steps, you should be able to run `emifier` from your terminal.
 
 ## Dependencies
 
