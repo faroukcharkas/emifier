@@ -1,7 +1,7 @@
 {
   "name": "emifier",
-  "version": "1.1.0",
-  "description": "Changes all px measurements to em in project.",
+  "version": "1.1.1",
+  "description": "A tool that automatically changes all px measurements in em in a project to ensure accessibility, responsiveness, and scalability.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
