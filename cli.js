@@ -49,10 +49,10 @@ const emifyPath = (inputPath) => {
 }
 
 yargs(hideBin(process.argv)).command('emify [baseSize] [path]', 'Change all measurements to em', (yargs) => {
-    return yargs.option('baseSize', {
+    return yargs.positional('baseSize', {
         describe: 'base px size',
         default: 16
-    }).option('path', {
+    }).positional('path', {
         describe: 'the path of the folder or file to emify',
         default: process.cwd()
     });
