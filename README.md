@@ -2,7 +2,7 @@
 
 ## Description
 
-A tool that automatically changes all px measurements in em in a project to ensure accessibility, responsiveness, and scalability.
+A tool that automatically converts px to em measurements in CSS, enhancing your project's accessibility, responsiveness, and scalability.
 
 ## Installation
 
