@@ -1,0 +1,15 @@
+{
+  "name": "emifier",
+  "version": "1.0.0",
+  "description": "Changes all px measurements to em in project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "em",
+    "css"
+  ],
+  "author": "Farouk Charkas <farouk.charkas@gmail.com>",
+  "license": "ISC"
+}
